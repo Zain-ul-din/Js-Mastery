@@ -1,0 +1,20 @@
+{
+  "name": "cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index"
+  },
+  "bin": {
+    "randoms": "./index.mjs"
+  },
+  "author": "zain ul din",
+  "license": "ISC",
+  "dependencies": {
+    "node-fetch": "^3.2.3",
+    "open": "^8.4.0",
+    "yargs": "^17.4.1"
+  }
+}
