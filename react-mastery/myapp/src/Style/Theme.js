@@ -6,8 +6,14 @@ import { createContext } from "react"
 // - set it using react.useState method
 
 export const theme = {
-    dark : {} , 
-    light : {}
+    dark : {
+        text : 'text-light' ,
+        bg : 'bg-dark'
+    } , 
+    light : {
+        text : 'light' ,
+        bg : 'light' 
+    }
 } 
 
 export const themeContext = createContext(theme)
