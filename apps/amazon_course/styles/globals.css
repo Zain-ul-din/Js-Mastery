@@ -1,0 +1,23 @@
+html, 
+body {
+    height: auto;
+    height: 100vh !important;
+    width: 100%;
+    /* background-image: url('../public/static/space_img.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #002244; */
+}
+
+
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.example::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE and Edge */
+.example {
+    -ms-overflow-style: none;
+}
+
