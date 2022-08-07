@@ -1,13 +1,11 @@
 html, 
 body {
-    height: auto;
     height: 100% !important;
     width: 100%;
     /* background-image: url('../public/static/space_img.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-color: #002244; */
-    overflow: scroll;
 }
 
 html {
@@ -20,9 +18,9 @@ html {
 
 
 /* Hide scrollbar for Chrome, Safari and Opera */
-*::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
     display: none;
-}
+} */
 
 /* Hide scrollbar for IE and Edge */
 .example {

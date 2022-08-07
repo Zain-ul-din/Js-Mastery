@@ -3,6 +3,7 @@ import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import { Image , Flex, Center , Text, Stack } from "@chakra-ui/react";
 
 import GetStarted from "./GetStarted";
+import CourseContent from "./CourseContent";
 
 const App = () => {
 
@@ -14,7 +15,7 @@ const App = () => {
 
     return (
   <div className="App">
-    <Parallax pages={2}>
+    <Parallax pages={3}>
       <ParallaxLayer offset={0} speed={1} style={{ height: "auto" }}>
         <Flex position={'relative'} justifyContent = {'center'}>
          <Image 
@@ -49,14 +50,16 @@ const App = () => {
       </ParallaxLayer>
       <ParallaxLayer offset={0.8} speed={0.5} style={{ height: "auto" }}>
       
-        <Flex bg= {'grey.800'} width = {'100%'} p = {0} m = {0} position = {'absolute'}>
+        <Flex bg= {'grey.800'} width = {'100%'} p = {0} m = {0} position = {'relative'}>
          
          <Image 
           src = {'/static/planet.png'}
           width = {'100%'}
           height = {'100%'}
          />
-        
+        <Flex width={'100%'} height = {'100px'} bgColor = {'gray.800'} position = {'absolute'} zIndex = {-2} bottom = {-20}>
+          {`  `}
+        </Flex>
         </Flex>
        </ParallaxLayer>
        <Flex height={'600px'}></Flex>
@@ -78,9 +81,14 @@ const App = () => {
          </Text>
          </Center>
          </Stack>
-         <GetStarted/>
+         <CourseContent/> 
        </ParallaxLayer>
-
+       <ParallaxLayer offset={0.9} speed = {0.3}>
+        <Center>
+         <Image src="/static/moon.webp"/>
+        </Center>
+        <GetStarted/>
+       </ParallaxLayer>
     </Parallax>
     
     

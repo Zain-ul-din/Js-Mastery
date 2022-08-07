@@ -85,7 +85,7 @@ export default function GetStarted() {
               </Text>
             </Box>
           </Stack>
-      <MoneyBackGuarantee />
+           <MoneyBackGuarantee />
         </Stack>
       </Container>
     </>
