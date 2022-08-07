@@ -13,7 +13,6 @@ export default function Home() {
       Hello World
     </Text>
 
-    
     <Button>
       Hello World
     </Button> */}
