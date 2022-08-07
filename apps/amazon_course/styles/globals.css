@@ -1,18 +1,26 @@
 html, 
 body {
     height: auto;
-    height: 100vh !important;
+    height: 100% !important;
     width: 100%;
     /* background-image: url('../public/static/space_img.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-color: #002244; */
+    overflow: scroll;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+*{ 
+    cursor: url('../public/static/cursor.png') , auto !important;
 }
 
 
-
 /* Hide scrollbar for Chrome, Safari and Opera */
-.example::-webkit-scrollbar {
+*::-webkit-scrollbar {
     display: none;
 }
 
@@ -21,3 +29,19 @@ body {
     -ms-overflow-style: none;
 }
 
+
+/* Utilities */
+
+.color-light_green { color : rgb(17, 255, 0) !important; }
+.color-amazon {color : #FF9900;}
+.color-qoutes {color : rgba(128, 128, 128, 0.367);}
+.color-info {
+    text-transform: uppercase;
+	background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.neonText {
+    color: linear(to right, #03001e, #7303c0, #ec38bc, #fdeff9);
+    
+  }

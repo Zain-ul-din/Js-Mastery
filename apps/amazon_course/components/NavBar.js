@@ -18,7 +18,7 @@ import {
   Text
 } from "@chakra-ui/react";
 import { AiOutlineMenu , AiFillAmazonSquare } from "react-icons/ai";
-
+import Link from "next/link"
 
 export default function NavBar () {
   
@@ -35,6 +35,7 @@ export default function NavBar () {
         shadow="md"
       >
         <Flex alignItems="center" justifyContent="space-between" mx="auto">
+            <Link href={'/'}>
           <Flex>
             <chakra.a
               title="Home Page"
@@ -50,6 +51,7 @@ export default function NavBar () {
             Epic Amazon Training
             </chakra.h1>
           </Flex>
+            </Link>
           <HStack display="flex" alignItems="center" spacing={1}>
             <HStack
               spacing={1}
@@ -60,7 +62,9 @@ export default function NavBar () {
               <Button variant="ghost">Curriculum</Button>
               <Button variant="ghost">Motive</Button>
               <Button variant="ghost">Prerequisite</Button>
-              <Button variant="ghost">Pricing</Button>
+              <Link href = {'/pricing/'}>
+                <Button variant="ghost">Pricing</Button>
+              </Link>
               <Button variant="ghost">Sign in</Button>
             </HStack>
             <Button colorScheme='whiteAlpha' color={'white'} size="sm">
@@ -92,10 +96,12 @@ export default function NavBar () {
                 Motive
                 </MenuItem>
                 
-                <MenuItem variant="ghost">
-                Pricing
-                </MenuItem>
-                
+                <Link href = {'/pricing/'}> 
+                 <MenuItem variant="ghost">
+                  Pricing
+                 </MenuItem>
+                </Link>
+
                 <MenuItem variant="ghost">
                 Sign in
               </MenuItem>
