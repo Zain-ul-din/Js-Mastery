@@ -15,7 +15,7 @@ const App = () => {
 
     return (
   <div className="App">
-    <Parallax pages={3}>
+    <Parallax pages={3.2}>
       <ParallaxLayer offset={0} speed={1} style={{ height: "auto" }}>
         <Flex position={'relative'} justifyContent = {'center'}>
          <Image 
@@ -63,7 +63,7 @@ const App = () => {
         </Flex>
        </ParallaxLayer>
        <Flex height={'600px'}></Flex>
-       <ParallaxLayer offset={0.2} speed = {0.3} style = {{height:'auto'}}>
+       <ParallaxLayer offset={0.2} speed = {0.4} style = {{height:'auto'}}>
           <Stack>
         <Center>
          <Text 
@@ -83,7 +83,7 @@ const App = () => {
          </Stack>
          <CourseContent/> 
        </ParallaxLayer>
-       <ParallaxLayer offset={0.9} speed = {0.3}>
+       <ParallaxLayer offset={1.2} speed = {0.4}>
         <Center>
          <Image src="/static/moon.webp"/>
         </Center>
