@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev" : "parcel ./src/index.html" ,
     "format": "prettier --write ."
   },
   "keywords": [],
