@@ -61,17 +61,17 @@ import {
 } from 'react-icons/fc'
 
 const ICONS = [
-  <FcAdvance/> ,
-  <FcBinoculars/> ,
-  <FcBarChart/> ,
-  <FcAssistant/> ,
-  <FcCurrencyExchange/> ,
-  <FcDataConfiguration/> ,
-  <FcBusinessman/> ,
-  <FcShipped/> ,
-  <FcSettings/> ,
-  <FcAnswers/> ,
-  <FcConferenceCall/>
+  <FcAdvance  key = {0}/> ,
+  <FcBinoculars key = {1}/> ,
+  <FcBarChart key = {2}/> ,
+  <FcAssistant key = {3}/> ,
+  <FcCurrencyExchange key = {4}/> ,
+  <FcDataConfiguration key = {5}/> ,
+  <FcBusinessman key = {6}/> ,
+  <FcShipped key = {7}/> ,
+  <FcSettings key = {8}/> ,
+  <FcAnswers key = {9}/> ,
+  <FcConferenceCall key = {10}/>
 ]
 
 function Title ({ idx , title}) {
