@@ -39,7 +39,7 @@ export default function CourseContent () {
           <Flex width={'100%'} height = {'100%'} px = {'10%'} justifyContent = {'center'}> <Divider/> </Flex>
           
           {outline && outline.map ((title , idx) => {
-            return <Title id = {idx} title={title} idx = {idx}/>
+            return <Title key={idx} title={title} idx = {idx}/>
           })}
           
         </>
