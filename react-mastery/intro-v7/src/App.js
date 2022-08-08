@@ -1,26 +1,27 @@
 // Entry Point
-"use strict" 
+// "use strict";
 
-const e = React.createElement 
+import React from "react";
+import ReactDOM from "react-dom";
+import Todos from "./Todos.js";
 
-const TODOS = ["do some work", "sleep", "coding", "go fast"] 
+const container = document.querySelector("#root");
+const root = ReactDOM.createRoot(container);
 
-const Todo = (props) => e("h1", {}, props.name) 
+function App() {
+  return (
+    <>
+      <div>
+        <button>click ME</button>
+        <Todos />
+      </div>
+    </>
+  );
+}
 
-const Todos = () => {
-  return e(
-    "div",
-    { className: "todos" },
-    TODOS.map((todo, idx) => e(Todo, { name: todo, key: idx })) // passing props
-  ) 
-} 
+root.render(<App />);
 
-const container = document.querySelector("#root") 
-const root = ReactDOM.createRoot(container) 
-
-root.render(
-  e("div", {}, [e("button", { key: 0 }, "click me"), e(Todos, { key: 1 })])
-) 
+//   e("div", {}, [e("button", { key: 0 }, "click me"), e(Todos, { key: 1 })])
 
 /// DOCS
 
@@ -40,4 +41,7 @@ root.render(
 // rc stand for run command
 // npm i -D eslint@8.8.0 eslint-config-prettier@8.3.0
 // parcel
-  
+// npm i react react-dom  # Setup via npm
+// set modules : commonjs | module
+
+// set browserslist : "" => https://browserslist.dev/?q=bGFzdCAyIHZlcnNpb25z
