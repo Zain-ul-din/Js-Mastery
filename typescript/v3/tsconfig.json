@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "outDir": "dist", // where to put compiled files
+    "target": "ES3", // js version
+    "module": "ES6"
+  },
+  "include": ["src"] // which files to compile
+}
+
+// tsc --outDir dist
