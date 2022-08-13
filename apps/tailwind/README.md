@@ -7,7 +7,7 @@
 
 In the project directory, you can run:
 
-### run 'npm i` to get started
+### run `npm i` to get started
 ### `npm start`
 ### `npm run build`
 ### `npm run eject`

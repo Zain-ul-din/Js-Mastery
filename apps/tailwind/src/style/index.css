@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Color's */
+
+.bg-gray-900 {
+  background-color: #202124;
+}
+.gary-100 {
+  color: #bdc1c6;
+}
+
+body {
+  background-color: #2c2a2b;
+  /* background-image: radial-gradient(ellipse closest-side at 50% 50%, #3a3f45, #37383c 25%, #343233); */
+  margin: 2%;
+  border: 1px solid #3c4043;
+  height: 91vh;
+  border-radius: 8px 8px 8px 8px;
+}
