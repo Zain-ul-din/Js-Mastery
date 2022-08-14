@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { SignWithGitHub, auth } from "./lib/firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
+import Todos from "./components/Todos";
 
 export default function App(): JSX.Element {
   const [user, loading, error] = useAuthState(auth);
@@ -23,6 +24,7 @@ export default function App(): JSX.Element {
         >
           Sign-in With GitHub
         </button>
+        <Todos />
       </div>
     </>
   );
