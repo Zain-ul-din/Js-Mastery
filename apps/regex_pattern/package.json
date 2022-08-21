@@ -1,0 +1,14 @@
+{
+  "name": "regex_pattern",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "format": "prettier . --write"
+  },
+  "devDependencies": {
+    "prettier": "^2.7.1"
+  }
+}
